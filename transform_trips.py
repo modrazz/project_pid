@@ -2,6 +2,7 @@ import os
 import zipfile
 import pandas as pd
 
+
 GTFS_PATH = "data/raw/PID_GTFS.zip"
 OUT_PATH  = "data/processed"
 TXT_NAME  = "trips.txt"
@@ -35,7 +36,7 @@ keep = [
     "bikes_allowed",
     "exceptional"
 ]
-df = df[[c for c in keep if c in df.columns]]
+keep = [c for c in keep if c in df.columns]
 df = df[keep].copy()
 
 out_file = os.path.join(OUT_PATH, "trips_processed.csv")
