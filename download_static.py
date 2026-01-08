@@ -4,10 +4,7 @@ import requests
 import os
 
 GTFS_URL = "http://data.pid.cz/PID_GTFS.zip"
-STOPS_URL = "https://data.pid.cz/stops/xml/StopsByName.xml"
-
 GTFS_PATH = "data/raw/PID_GTFS.zip"
-STOPS_PATH = "data/raw/STOPS_GROUPS.xml"
 
 def download(url, path):
     response = requests.get(url)
@@ -17,4 +14,3 @@ def download(url, path):
         file.write(response.content)
         
 download(GTFS_URL, GTFS_PATH)
-download(STOPS_URL, STOPS_PATH)
