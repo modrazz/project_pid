@@ -10,7 +10,7 @@ TXT_NAME  = "transfers.txt"
 # read txt file from zip
 with zipfile.ZipFile(GTFS_PATH, "r") as gtfs_zip:
     with gtfs_zip.open(TXT_NAME) as file_txt:
-        df = pd.read_csv(file_txt, dtype=str, on_bad_lines="warn")
+        df = pd.read_csv(file_txt, dtype=str)
 
 # changing type to numeric for purely numeric columns 
 for c in ["transfer_type", "min_transfer_time", "max_waiting_time"]:
