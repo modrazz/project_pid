@@ -1,7 +1,0 @@
-python download_static.py
-python transform_stops.py
-python transform_trips.py
-python transform_routes.py
-python transform_stop_times.py
-python transform_transfers.py
-python transform_calendar_calendar_dates.py
