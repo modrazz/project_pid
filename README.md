@@ -12,6 +12,13 @@ The analysis is based on publicly available open data from PID, available at htt
 - trips.txt
 - stop_times.txt
 
+## How to run
+In your terminal, run the following command, which installs necessary libraries.
+```text
+pip install -r requirements.txt
+```
+Then simply open the project_final.ipynb file and click the 'Run All' option.
+
 ## Methodology
 For the finding the optimal placement, we decided on four criteria on which we based our analysis:
 - highest visibility: that is, the number of trips per stop
