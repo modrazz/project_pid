@@ -13,11 +13,15 @@ The analysis is based on publicly available open data from PID, available at htt
 - stop_times.txt
 
 ## How to run
-In your terminal, run the following command, which installs necessary libraries.
+Clone this repository onto your computer using the following command:
+```text
+github clone https://github.com/modrazz/project_pid
+```
+Open a terminal instance in the directory, where the repository is cloned and run the following command, which installs necessary libraries:
 ```text
 pip install -r requirements.txt
 ```
-Then simply open the project_final.ipynb file and click the 'Run All' option.
+Then simply open the project_final.ipynb file using your Jupyter Notebook client (or other suitable IDE) and click the 'Run All' option.
 
 ## Methodology
 For the finding the optimal placement, we decided on four criteria on which we based our analysis:
